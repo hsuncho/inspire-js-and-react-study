@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="name" id="name">
+    <button type="button" onclick="arrowFunc()">send</button>
+
+    <script>
+        // single line comment
+        /*
+            multi line comment
+            변수 - 변수는 변하는 값을 의미하고 특정 데이터를 담는 그릇과 같다
+            (대소문자 구별, 특수문자 사용 - $, _)
+            기본 타입 - 숫자, 문자(열), 논리, null, undefined
+            참조 타입(객체 타입) - Object, Array, Function
+
+            (var | let | const) msg = "좋은 아침입니다";
+        */
+       let msg = "좋은 아침입니다";
+       console.log("[debug] >>>", msg);
+       console.log("[debug] >>>", typeof msg);
+
+       msg = true;
+       console.log("[debug] >>>", msg);
+       console.log("[debug] >>>", typeof msg);
+
+       let nullChk = null;
+       console.log("[debug] >>>", typeof nullChk == null);
+       console.log("[debug] >>>", typeof nullChk === null);
+
+       console.log("[debug] >>> 1 === 1", 1 === 1);
+       console.log("[debug] >>> 1 == 1", 1 == 1);
+
+       console.log("[debug] >>> undefined", name);
+
+       // NaN(Not a Number)
+       // 수치 연산을 통해서 정상적인 값을 얻지 못할 때 발생하는 에러
+       console.log("[debug] >>> NaN", 1 - 'jslim');
+
+       let obj = {
+            name : 'jslim',
+            age : 20,
+            major : 'cs'
+       };
+
+       console.log("[debug] >>> object type", typeof obj);
+       
+       console.log("[debug] >>> object", obj);
+       console.log("[debug] >>> object", obj.name);
+       console.log("[debug] >>> object", obj.age);
+       console.log("[debug] >>> object", obj['major']);
+       obj['address'] = 'seoul';       
+       console.log("[debug] >>> object", obj.address);
+       
+       let instance = {
+            name : 'jslim',
+            age : 20,
+            major : 'cs'
+       };
+
+       instance['address'] = 'seoul';
+       console.log("[debug] >>> obj == instance", obj === instance);
+       
+       // Array - 첨자번지
+       let arr = [
+        {name : 'jslim'},
+        {name : 'siat'},
+        {name : 'am inspire'},
+        {name : 'parksu'},
+        {name : 'dong'},
+       ];
+
+       console.log("[debug] >>> arr type", typeof arr);
+       console.log(arr[0].name);
+       console.log(arr[0]['name']);
+
+       const nameInArr = arr[0].name;
+       console.log(`hello, ${nameInArr}`);
+       
+       
+       function btnHandler() {
+        window.alert("click-1");
+       }
+
+       let btn = function() {
+        window.alert("click-2")
+       }
+
+       console.log("[debug] >>> function ", typeof btn);
+       
+       let arrowFunc = () => {
+        window.alert("click-3")
+       };
+
+       const array = [1,2,3,4,5]
+       let [ x1, x2, ...other ] = array;
+       console.log("[debug] >>> x1 ", x1);
+       console.log("[debug] >>> x2 ", x1);
+       console.log("[debug] >>> x3 ", other);
+       
+
+
+    </script>
+</body>
+</html>

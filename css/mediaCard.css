@@ -1,0 +1,73 @@
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (min-width: 320px) and (max-width : 700px) {
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+h1 {
+    border: 1px solid red;
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+.column {
+    border: 1px solid blue;
+    width: 100%;
+    padding: 0.5em;
+}
+
+.column > .card {
+    border: 1px solid blueviolet;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+
+.column > .card:hover {
+    background-color: black;
+    color: #fff;
+}
+
+.column > .card > .img-container {
+    border: 1px solid red;
+    padding: 0.5em;
+    border-radius: 50%;
+    width: 8em;
+    height: 8em;
+    margin-bottom: 1.2em;
+}
+
+.column > .card > .img-container img {
+    border: 1px solid blue;
+    padding: 0.5em;
+    border-radius: 50%;
+}
+
+.column > .card > h2 {
+    font-weight: 500;
+}
+
+.column > .card > p {
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+}
+
+.social {
+    margin-bottom: 0.2em;
+}
+
+.card h2, p, div {
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+    margin: auto;
+}

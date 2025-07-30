@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <label>현재시간 : </label>
+    <span id="time"></span>
+
+    <hr>
+    <a href="google.com">google</a><br>
+    <a href="naver.com">naver</a><br>
+    <a href="lgcns.com">lgcns</a><br>
+
+    <script>
+
+        // let spanNode = document.querySelector("#time");
+        let spanNode = document.getElementById('time');
+        console.log("[debug] >>> ", spanNode);
+
+        // new 연산자를 이용한 객체 생성
+        current = new Date();
+        console.log("[debug] >>> current : ", current);
+        
+        // tag의 body로 텍스트를 삽입하고자 할 때는 textContent 속성을 사용
+        spanNode.textContent = current.toLocaleString();
+
+        // 식별값이 없을 때 태그명으로 접근할 수 있다 : getElementsbyTagName();
+        const lst = document.getElementsByTagName('a');
+        console.log("[debug] >>> lst : ", lst.length);
+        
+        for(let i=0; i<lst.length; i++) {
+            console.log(lst.item(i).href);
+            console.log(lst[i].href);
+        }
+
+        // 클래스이름으로 태그에 접근
+        // pNode = document.querySelector('.result') ; 
+        pNode = document.getElementsByClassName('result') ; 
+        console.log("[debug] >>> result : "  , pNode );
+        pNode[0].textContent="클래스이름으로 태그에 접근" ;  
+        pNode[0].style.color="red";
+
+    </script>
+
+</body>
+</html>

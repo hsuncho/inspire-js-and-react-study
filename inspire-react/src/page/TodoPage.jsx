@@ -6,14 +6,18 @@ const TodoPage = () => {
     // let txt = '';
 
     const [txt, setTxt] = useState('');
+    const [lst, setLst] = useState([]);
 
     const btnHandler = (msg) => {
         console.log("[debug] >>> btn click", msg);
+        setLst(prev => [...prev, msg]);
+        setTxt('');
     }
 
     const txtHandler = (e) => {
         setTxt(e.target.value);
     }
+
 
     // template UI
     return (
@@ -31,7 +35,17 @@ const TodoPage = () => {
                     <button className="btn btn-primary" type="button" onClick={() => btnHandler(txt)}>Add</button>
                     </div>
             </form>
-            입력된 데이터 출력하는 영역
+            <span>
+                {lst.map((item, idx) => (
+                    <div key={idx}>
+                        <span>
+                            {item}
+                        </span>
+                    </div>
+                )
+
+                )}
+            </span>
         </div>
     )
 };

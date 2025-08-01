@@ -11,20 +11,28 @@ import reportWebVitals from './reportWebVitals';
 //   </React.StrictMode>
 // );
 
-import LibraryPage from "./page/LibraryPage"
-import CommentPage from './page/CommentPage';
-import TodoPage from './page/TodoPage';
-import UserPage from './page/rendering/UserPage';
-import StateSample from './page/state/StateSample';
+// import LibraryPage from "./page/LibraryPage"
+// import CommentPage from './page/CommentPage';
+// import TodoPage from './page/TodoPage';
+// import UserPage from './page/rendering/UserPage';
+// import StateSample from './page/state/StateSample';
+// import NotificationPage from './page/hook/NotificationPage';
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+// root.render(
+//   <React.StrictMode>
+//     {/* <LibraryPage /> */}
+//     {/* <CommentPage /> */}
+//     {/* <TodoPage /> */}
+//     {/* <UserPage /> */}
+//     {/* <StateSample /> */}
+//     <NotificationPage />
+//   </React.StrictMode>
+// );
+
+import NotificationPage from './page/hook/NotificationPage';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    {/* <LibraryPage /> */}
-    {/* <CommentPage /> */}
-    {/* <TodoPage /> */}
-    {/* <UserPage /> */}
-    <StateSample />
-  </React.StrictMode>
+    <NotificationPage />
 );
 
 // If you want to start measuring performance in your app, pass a function

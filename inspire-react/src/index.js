@@ -15,13 +15,15 @@ import LibraryPage from "./page/LibraryPage"
 import CommentPage from './page/CommentPage';
 import TodoPage from './page/TodoPage';
 import UserPage from './page/rendering/UserPage';
+import StateSample from './page/state/StateSample';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <LibraryPage /> */}
     {/* <CommentPage /> */}
     {/* <TodoPage /> */}
-    <UserPage />
+    {/* <UserPage /> */}
+    <StateSample />
   </React.StrictMode>
 );
 

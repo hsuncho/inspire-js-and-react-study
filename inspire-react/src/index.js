@@ -4,12 +4,13 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+// react-router-dom을 이용한 화면 전환
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+// root.render(
+//   <React.StrictMode>
+//     <App />
+//   </React.StrictMode>
+// );
 
 // import LibraryPage from "./page/LibraryPage"
 // import CommentPage from './page/CommentPage';
@@ -29,14 +30,15 @@ root.render(
 //   </React.StrictMode>
 // );
 
-// import NotificationPage from './page/hook/NotificationPage';
-// import SignUpPage from './page/form/SignUpPage';
-// const root = ReactDOM.createRoot(document.getElementById('root'));
-// root.render(
-//     // <NotificationPage />
+import NotificationPage from './page/hook/NotificationPage';
+import SignUpPage from './page/form/SignUpPage';
+import ContextApp from './page/ContextApp';
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+    // <NotificationPage />
     // <SignUpPage />
-
-// );
+    <ContextApp />
+);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

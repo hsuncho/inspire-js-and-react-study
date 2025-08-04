@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import SignUpPage from './page/form/SignUpPage';
 import SignInPage from './page/form/SignInPage';
 import TodoList from './page/form/TodoList';
+import ContextPage from './page/context/ContextPage';
 function App() {
   return (
     <div>

@@ -37,6 +37,10 @@ class Notification extends React.Component {
         console.log(`[debug] >>> Notification componentWillUnmount ${this.props.id}`);
 
     }
+    
+    shouldComponentUpdate(nextProps) {
+        return nextProps.msg !== this.props.msg;
+    }
 
     render() {
         return (

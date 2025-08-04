@@ -1,11 +1,17 @@
 import { useState } from "react";
 import api from "../../api/axios";
 
+// 화면 전환을 위해서 임포트
+import { useNavigate } from "react-router-dom";
+
 const SignUpPage = () => {
     
     const [email, setEmail]   = useState('');
     const [passwd, setPasswd] = useState('');
     const [gender, setGender] = useState('');
+
+    // 컴포넌트 이동을 위한 useNavigate() 훅 사용
+    const moveUrl = useNavigate();
     
     const emailHandler = (e) => {
         setEmail(e.target.value); 
@@ -38,13 +44,26 @@ const SignUpPage = () => {
         /*
         post : 입력
         get : 데이터 가져올 때
-        put : 데이터 수정
+
+        // 204 : 요청 성공, 서버로부터 전달되는 콘텐츠가 없을 때
+        put : 데이터 수정(리소스 전체를 수정하거나 새로 생성)
         delete : 데이터 삭제
+        patch : 데이터 일부 수정
         */
 
-        const response = await api.post('users', data);
-        console.log("[debug] >>> axios /users post ");
-        console.log("[debug] >>> response ", response);
+        try {
+            const response = await api.post('users', data);
+            console.log("[debug] >>> axios /users post ");
+            console.log("[debug] >>> response ", response);
+            if(response.status == 201) {
+                //router-dom 이용해서 컴포넌트 transition
+                moveUrl('/loginForm');
+            }
+        } catch(error) {
+
+        } finally {
+
+        }
 
     }
     return (
@@ -71,7 +90,7 @@ const SignUpPage = () => {
                 </label>
                 <br/>
                 <button type="button"
-                        onClick={() => submitHandler(email, passwd, gender) }>로그인</button>
+                        onClick={() => submitHandler(email, passwd, gender) }>가입</button>
             </form>           
         </div>
     ) ;

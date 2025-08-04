@@ -3,20 +3,42 @@
     {
       "id": 1,
       "content": "hi hello"
+    },
+    {
+      "id": 2,
+      "content": "화면 전환 이해하기"
     }
   ],
   "users": [
     {
-      "email": "abc",
-      "passwd": "aa",
-      "gender": "",
+      "email": "abc@email.com",
+      "passwd": "1234",
+      "gender": "여자",
       "id": 1
     },
     {
-      "email": "efg",
-      "passwd": "aa",
-      "gender": "여자",
+      "email": "lgcns@email.com",
+      "passwd": "1234",
+      "gender": "남자",
       "id": 2
+    },
+    {
+      "email": "bob@email.com",
+      "passwd": "1234",
+      "gender": "남자",
+      "id": 3
+    },
+    {
+      "email": "amy@email.com",
+      "passwd": "1234",
+      "gender": "여자",
+      "id": 4
+    },
+    {
+      "email": "emily@email.com",
+      "passwd": "1234",
+      "gender": "여자",
+      "id": 5
     }
   ]
 }

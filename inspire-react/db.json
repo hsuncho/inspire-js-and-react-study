@@ -39,6 +39,12 @@
       "passwd": "1234",
       "gender": "여자",
       "id": 5
+    },
+    {
+      "email": "tom@email.com",
+      "passwd": "1234",
+      "gender": "남자",
+      "id": 6
     }
   ]
 }

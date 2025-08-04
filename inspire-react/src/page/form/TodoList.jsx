@@ -8,6 +8,8 @@ const TodoList = () => {
 
     return (
         <div>
+            <Link to="/">첫 화면 이동</Link>
+            <hr />
             <ol>
                 {
                     arr.map( (todo) => {
@@ -17,8 +19,6 @@ const TodoList = () => {
             </ol>
         </div>      
     );
-
-
 
 }
 

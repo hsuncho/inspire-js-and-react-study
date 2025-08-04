@@ -30,9 +30,11 @@ import reportWebVitals from './reportWebVitals';
 // );
 
 import NotificationPage from './page/hook/NotificationPage';
+import SignUpPage from './page/form/SignUpPage';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <NotificationPage />
+    // <NotificationPage />
+    <SignUpPage />
 );
 
 // If you want to start measuring performance in your app, pass a function

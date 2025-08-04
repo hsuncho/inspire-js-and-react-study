@@ -1,0 +1,22 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "content": "hi hello"
+    }
+  ],
+  "users": [
+    {
+      "email": "abc",
+      "passwd": "aa",
+      "gender": "",
+      "id": 1
+    },
+    {
+      "email": "efg",
+      "passwd": "aa",
+      "gender": "여자",
+      "id": 2
+    }
+  ]
+}

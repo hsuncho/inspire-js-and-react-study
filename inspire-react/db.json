@@ -1,50 +1,26 @@
 {
-  "todos": [
+  "todos": [],
+  "users": [],
+  "blogs": [
     {
+      "title": "첫 번째 글",
+      "content": "안녕하세요!",
       "id": 1,
-      "content": "hi hello"
+      "comments": [
+        {
+          "id": 11,
+          "content": "실제 개발 시 map 활용은 필수입니다"
+        },
+        {
+          "id": 12,
+          "content": "한 줄 댓글"
+        }
+      ]
     },
     {
-      "id": 2,
-      "content": "화면 전환 이해하기"
-    }
-  ],
-  "users": [
-    {
-      "email": "abc@email.com",
-      "passwd": "1234",
-      "gender": "여자",
-      "id": 1
-    },
-    {
-      "email": "lgcns@email.com",
-      "passwd": "1234",
-      "gender": "남자",
+      "title": "블로그 실습",
+      "content": "의존성 배열 개념 정리",
       "id": 2
-    },
-    {
-      "email": "bob@email.com",
-      "passwd": "1234",
-      "gender": "남자",
-      "id": 3
-    },
-    {
-      "email": "amy@email.com",
-      "passwd": "1234",
-      "gender": "여자",
-      "id": 4
-    },
-    {
-      "email": "emily@email.com",
-      "passwd": "1234",
-      "gender": "여자",
-      "id": 5
-    },
-    {
-      "email": "tom@email.com",
-      "passwd": "1234",
-      "gender": "남자",
-      "id": 6
     }
   ]
 }

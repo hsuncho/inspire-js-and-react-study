@@ -1,7 +1,11 @@
 import axios from "axios";
 
+const url = process.env.REACT_APP_JSON_SERVER_URL;
+console.log("[debug] >>> env ", url);
+
+
 const api = axios.create({
-    baseURL : 'http://localhost:4000/',
+    baseURL : url,
     withCredentials : true
 });
 

@@ -34,12 +34,14 @@ import NotificationPage from './page/hook/NotificationPage';
 import SignUpPage from './page/form/SignUpPage';
 import ContextApp from './page/ContextApp';
 import BlogApp from './BlogApp';
+import WeatherApp from './WeatherApp';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     // <NotificationPage />
     // <SignUpPage />
     // <ContextApp />
-    <BlogApp />
+    // <BlogApp />
+    <WeatherApp />
 );
 
 // If you want to start measuring performance in your app, pass a function

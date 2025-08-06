@@ -14,6 +14,7 @@ const Wrapper = styled.div`
   :hover {
     background: lightgrey;
   }
+  margin-bottom: 16px;
 `;
 
 const ContentText = styled.p`
@@ -24,7 +25,7 @@ const ContentText = styled.p`
 const BlogCommentListItem = ({comment}) => {
     return (
       <Wrapper>
-        <ContentText>{comment.content}</ContentText>
+        <ContentText>{comment.comment}</ContentText>
       </Wrapper>
     );
 };

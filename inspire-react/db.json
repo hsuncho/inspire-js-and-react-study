@@ -5,22 +5,34 @@
     {
       "title": "첫 번째 글",
       "content": "안녕하세요!",
-      "id": 1,
-      "comments": [
-        {
-          "id": 11,
-          "content": "실제 개발 시 map 활용은 필수입니다"
-        },
-        {
-          "id": 12,
-          "content": "한 줄 댓글"
-        }
-      ]
+      "id": 1
     },
     {
       "title": "블로그 실습",
       "content": "의존성 배열 개념 정리",
       "id": 2
+    },
+    {
+      "title": "세 번째 글",
+      "content": "안녕하시렵니까",
+      "id": 3
+    }
+  ],
+  "comments": [
+    {
+      "blogId": 1,
+      "comment": "댓글만 재렌더링",
+      "id": 1
+    },
+    {
+      "blogId": 1,
+      "comment": "얕은 복사",
+      "id": 2
+    },
+    {
+      "blogId": 2,
+      "comment": "의존성 배열이란?",
+      "id": 3
     }
   ]
 }
